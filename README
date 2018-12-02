@@ -1,0 +1,37 @@
+ECE1387 Assignment 3 README file
+- developer:	Louis Chen
+- date:		Nov 29, 2018
+
+Please read this file before compiling and launching the branch & bound partitioner.
+
+Please follow the steps below to achieve successful compilation.
+1)  Use <cd> to switch to the "assignment3" directory.
+2)  Type <make> or <make all> to compile the source code.
+    This will generate an executable called "Partitioner-LouisChen".
+3)  Type <make clean> if wish to clean the project.
+
+Please follow the steps below to launch the application successfully.
+4)  Use <pwd> to make sure current directory is "assignment3".
+5)  To run the application, type the following command:
+
+    ./Partitioner-LouisChen <cct-file-path> <-traversal=[dfs|lbf]> <-display=[on|off]>
+
+    For traversal mode, set to dfs for depth-first traversal,
+    set to lbf for lowest-bounf-first traversal.
+
+    For decision tree plot, set -display=on to turn it on, otherwise off.
+
+    Example command to run cct1 with depth-first traversal and display off:
+    ./Partitioner-LouisChen ./cct1 -traversal=dfs -display=off
+
+6)  The terminal should output initial and final partitions, crossing counts,
+    number of nodes expanded, and run-time.
+
+If display is turned on, press "Proceed" to start the partitioner. Press "Proceed"
+again to turn off. Please note that the pruned decision tree, once plotted in red,
+may disappear if the graphics window is moved or refreshed, since the "drawscreen"
+function does not get updated with the pruned plot due to drawing inefficiency and
+high run-time.
+
+Hope you had a great time exploring my branch & bound partitioner program! :)
+
